@@ -31,6 +31,8 @@ def go(args):
     df['song_name'].fillna(value='', inplace=True)
     df['text_feature'] = df['title'] + ' ' + df['song_name']
 
+    df['loudness'].fillna(value=0, inplace=True) # modified the loudness column to be 0 instead of NaN
+
     filename = "processed_data.csv"
     df.to_csv(filename)
 
