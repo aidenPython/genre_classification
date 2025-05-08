@@ -1,5 +1,6 @@
 import scipy.stats
 import pandas as pd
+import numpy as np
 
 
 def test_column_presence_and_type(data):
